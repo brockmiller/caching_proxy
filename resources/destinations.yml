@@ -1,0 +1,15 @@
+# YAML Config file for use with CachingProxy::MultipleDestinationResolver
+#
+# Config is a map of the destination alias to its host address and port
+# e.g.  authService-v1:
+#         host: http://auth-service.example.com/v1
+#         port: 80
+#
+# The colon ':' prefix ensures that keys are loaded as symbols rather than
+# strings.
+:github:
+  :host: https://github.com
+  :port: 443
+:rubygems:
+  :host: https://rubygems.org
+  :port: 443
